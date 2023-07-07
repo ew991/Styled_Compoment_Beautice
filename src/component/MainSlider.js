@@ -18,6 +18,7 @@ const LeftBlock = styled.div`
   display: flex;
   flex-direction: column;
   gap: 15px;
+  margin-left: 40px;
   @media (min-width: 769px) {
     max-width: 500px;
   }
@@ -51,7 +52,7 @@ const Button = styled.button`
 `;
 
 const RightBlock = styled.div`
-
+  
   @media (max-width: 768px) {
     order: -1;
   }
@@ -65,6 +66,7 @@ const SildeBtn = styled.div`
 display: flex;
 justify-content: center;
 align-items: center;
+margin-top: 130px;
 @media (max-width: 768px) {
     display: none;
   }

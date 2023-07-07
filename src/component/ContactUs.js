@@ -7,6 +7,7 @@ const Container = styled.div`
 display: flex;
 align-items: center;
 justify-content: center;
+margin-top: 144px;
 padding: 0 150px;
 @media (max-width: 1024px) {
     flex-direction: column;
@@ -28,13 +29,14 @@ const Block1 = styled.div`
 `;
 
 const FormContainer = styled.div`
-
-
+.btn{
+  margin-top: 17px;
+}
 `;
 
 const FormRow = styled.div`
   display: flex;
-  margin-bottom: 10px;
+  margin-bottom: 38px;
   gap: 35px;
 `;
 
@@ -92,7 +94,7 @@ const Form = () => {
         <FormRow>
           <FormTextarea placeholder="Your inquiry here" />
         </FormRow>
-        <button>Send Message</button>
+        <button className='btn'>Send Message</button>
 
       </FormContainer>
     </Container>

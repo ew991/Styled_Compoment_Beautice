@@ -9,6 +9,7 @@ const Container = styled.div`
   /* justify-content: space-between; */
   justify-content: center;
   align-items: center;
+  margin-top: 130px;
   padding: 0 150px;
   gap: 10px;
 
@@ -45,6 +46,7 @@ letter-spacing: 1.6px;
 
 
 const Bbutton = styled.div`
+margin-top: 30px;
   display: flex;
   gap: 15px;
 `;

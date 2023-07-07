@@ -7,6 +7,7 @@ const NavbarContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 40px;
   @media (min-width: 1024px) {
     padding: 0 150px;
   }
@@ -46,7 +47,8 @@ const NavItem = styled.a`
 `;
 
 const NavItem1 = styled.a`
-  margin-left: 16px;
+  /* margin-left: 16px; */
+  font-weight: 600;
   text-decoration: none;
   color: #414880;
   
@@ -58,6 +60,7 @@ const NavItem1 = styled.a`
   }
 `;
 const Button = styled.button`
+margin-left: 10px;
    @media (max-width: 768px) {
     margin-left: 0;
     margin-top: 8px;

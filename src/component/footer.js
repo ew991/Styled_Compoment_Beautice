@@ -8,6 +8,7 @@ const FooterContainer = styled.footer`
   position: relative;
   width: auto;
   height: auto;
+  margin-top: 78px;
 
   flex-shrink: 0;
 `;
@@ -18,9 +19,19 @@ const Img = styled.img`
 `;
 
 const Footerblock1 = styled.div`
-display: flex;
+  display: flex;
   text-align: center;
-  gap: 150px;
+  @media (min-width: 1340px) {
+    gap: 150px;
+  }
+  @media (max-width: 1339px) {
+    gap: 20px;
+  }
+  @media (max-width: 1024px) {
+    display: grid;
+    row-gap: 30px;
+    column-gap: 30px;
+  }
   .footerlogo{
     margin-bottom: 30px;
   }
@@ -29,18 +40,44 @@ const Footerblock2 = styled.div`
   margin-top: 150px;
   display: flex;
   justify-content: space-between;
+  @media (max-width: 1024px) {
+    margin-top: 50px;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
 `;
 const Footerbl = styled.div`
   display: flex;
   gap:15px;
   justify-content: space-between;
 `;
-const Box = styled.div` 
-
- background-image: url(${footerbg});
- max-width: 1440px;
+const Box = styled.div`
+ 
+  @media (min-width: 1224px) {
+  
+  background-image: url(${footerbg});
   height: 703.342px;
-  padding: 100px 150px;
+  }
+  @media (max-width: 1223px) {
+  background-color: #172176;
+  }
+  @media (min-width: 1024px) {
+    padding: 100px 150px;
+    
+  }
+  @media (max-width: 1024px) {
+    padding: 50px 100px;
+    
+  }
+  @media (max-width: 768px) {
+    padding: 25px 50px;
+    
+  }
+  max-width: 1440px;
+ 
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -59,6 +96,11 @@ const Box1 = styled.div`
   flex-direction: column;
   align-items: flex-start;
   gap: 5px;
+  min-width: 460px;
+  @media (max-width: 1024px) {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
  `;
 const Box2 = styled.ul` 
   color: #FFFFFF;
@@ -67,6 +109,27 @@ const Box2 = styled.ul`
   align-items: flex-start;
   gap: 10px;
   list-style-type: none;
+  min-width: 132px;
+  @media (max-width: 1024px) {
+    margin-left: 20px;
+   grid-row-start: 2;
+   grid-column-end: 2;
+  }
+  li::before{
+    content: '>';
+  }
+   `;
+const Box3 = styled.ul` 
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  list-style-type: none;
+  min-width: 215px;
+  @media (max-width: 1024px) {
+    grid-row-start: 2;
+  }
   li::before{
     content: '>';
   }
@@ -107,7 +170,7 @@ const Footer = () => {
               <li> <Taga>Team</Taga></li>
 
             </Box2>
-            <Box2>
+            <Box3>
               Informations
               <li> <Taga>Terms & conditions</Taga></li>
               <li> <Taga>Privacy policy</Taga></li>
@@ -115,7 +178,7 @@ const Footer = () => {
               <li> <Taga>Contact</Taga></li>
 
 
-            </Box2>
+            </Box3>
           </Footerblock1>
           <Footerblock2>
             <Box4><svg width="305" height="28" viewBox="0 0 305 28" fill="none" xmlns="http://www.w3.org/2000/svg">

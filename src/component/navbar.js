@@ -31,6 +31,7 @@ const RightSection = styled.div`
   @media (max-width: 768px) {
     flex-direction: column;
     align-items: flex-start;
+    margin-left: 40px;
   }
 `;
 
@@ -62,8 +63,11 @@ const NavItem1 = styled.a`
 const Button = styled.button`
 margin-left: 10px;
    @media (max-width: 768px) {
-    margin-left: 0;
-    margin-top: 8px;
+    margin-left: 0px;
+    background-color: inherit;
+    color: #FF64AE;
+    text-align: justify;
+    font-weight:800;
     display: ${(props) => (props.visible ? 'block' : 'none')};
   }
   

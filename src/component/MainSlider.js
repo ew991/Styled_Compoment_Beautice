@@ -7,6 +7,7 @@ const Container = styled.div`
   /* justify-content: space-between; */
   justify-content: center;
   align-items: center;
+  margin-top: 110px;
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -25,9 +26,11 @@ const LeftBlock = styled.div`
   
 
   @media (max-width: 768px) {
+    margin-left: 0px;
 
     justify-content: center;
     align-items: center;
+    text-align: center;
   }
 `;
 

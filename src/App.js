@@ -19,7 +19,7 @@ function App() {
       <AboutUs />
       <ProfessionT />
       <ContacUs />
-      {/* <Footer /> */}
+      <Footer />
     </>
 
   );
